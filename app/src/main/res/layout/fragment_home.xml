@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundr"
+    tools:context=".Fragments.HomeFragment">
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="50dp">
+
+    <View
+        android:id="@+id/v_home"
+        android:layout_width="match_parent"
+        android:layout_height="410dp"
+        android:background="@drawable/toolbar_style"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/slider_home_vp"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <me.relex.circleindicator.CircleIndicator
+        android:id="@+id/indicator"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:visibility="visible"
+        android:elevation="3dp"
+        app:layout_constraintBottom_toBottomOf="@+id/slider_home_vp"
+        app:layout_constraintEnd_toEndOf="@+id/slider_home_vp"
+        app:layout_constraintStart_toStartOf="@+id/slider_home_vp" />
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/category_recycler"
+        android:layout_width="393dp"
+        android:layout_height="109dp"
+        android:paddingEnd="40dp"
+        app:layout_constraintEnd_toEndOf="@+id/slider_home_vp"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/imageView4"
+        app:layout_constraintTop_toBottomOf="@id/slider_home_vp" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:src="@drawable/categories"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/category_recycler"
+        app:layout_constraintVertical_bias="0.0" />
+
+
+    <ImageView
+        android:id="@+id/imageView09"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/most_rated"
+        app:layout_constraintBottom_toBottomOf="@+id/most_rate_home_recycler"
+        app:layout_constraintEnd_toStartOf="@+id/most_rate_home_recycler"
+        app:layout_constraintTop_toBottomOf="@+id/imageView4"
+        app:layout_constraintVertical_bias="0.797" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/most_rate_home_recycler"
+        android:layout_width="393dp"
+        android:layout_height="130dp"
+        android:paddingEnd="40dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="10dp"
+        app:layout_constraintEnd_toEndOf="@+id/category_recycler"
+        app:layout_constraintStart_toEndOf="@+id/imageView4"
+        app:layout_constraintTop_toBottomOf="@id/category_recycler" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="82dp"
+        android:layout_height="21dp"
+        android:layout_marginTop="15dp"
+        android:fontFamily="sans-serif"
+        android:orientation="vertical"
+        android:text="Products"
+        android:textColor="@color/maincolor"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.048"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/most_rate_home_recycler" />
+
+<androidx.recyclerview.widget.RecyclerView
+android:id="@+id/product_rec"
+android:layout_width="370dp"
+android:layout_height="match_parent"
+android:layout_marginTop="7dp"
+android:paddingBottom="80dp"
+app:layout_constraintEnd_toEndOf="parent"
+app:layout_constraintHorizontal_bias="0.0"
+app:layout_constraintStart_toStartOf="@+id/textView4"
+app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>

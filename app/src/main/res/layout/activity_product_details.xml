@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.ProductDetails">
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="70dp">
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/img_slide_one" />
+
+
+    <View
+        android:id="@+id/view_product_details"
+        android:layout_width="match_parent"
+        android:layout_height="460dp"
+        android:layout_marginTop="248dp"
+        android:background="@drawable/card_shape_design"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/heart_like_product_details"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:layout_marginTop="12dp"
+        app:layout_constraintEnd_toEndOf="@+id/view_product_details"
+        app:layout_constraintHorizontal_bias="0.068"
+        app:layout_constraintStart_toStartOf="@+id/view_product_details"
+        app:layout_constraintTop_toTopOf="@+id/view_product_details"
+        android:background="@drawable/like_heart" />
+
+
+    <Button
+        android:id="@+id/favorite_product_details"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="108dp"
+        android:background="@drawable/favorite_icon"
+        app:layout_constraintBottom_toBottomOf="@+id/heart_like_product_details"
+        app:layout_constraintStart_toEndOf="@+id/heart_like_product_details"
+        app:layout_constraintTop_toTopOf="@+id/heart_like_product_details"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/btn_menu_product_details"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="128dp"
+        android:background="@drawable/multi_icon"
+        app:layout_constraintBottom_toBottomOf="@+id/favorite_product_details"
+        app:layout_constraintStart_toEndOf="@+id/favorite_product_details"
+        app:layout_constraintTop_toTopOf="@+id/favorite_product_details"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/product_name_product_details"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="sans-serif"
+        android:text="Women Jacket"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/heart_like_product_details"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/heart_like_product_details"
+        app:layout_constraintTop_toBottomOf="@+id/heart_like_product_details" />
+
+    <TextView
+        android:id="@+id/seller_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:fontFamily="sans-serif"
+        android:text="Dania Alsaqqa"
+        android:textColor="#BCE73039"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="@+id/product_name_product_details"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/product_name_product_details"
+        app:layout_constraintTop_toBottomOf="@+id/product_name_product_details" />
+
+
+    <TextView
+        android:id="@+id/price_product_details"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:fontFamily="sans-serif"
+        android:text="200"
+        android:textColor="#BCE73039"
+        android:textSize="14sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/sin_product_details"
+        app:layout_constraintStart_toEndOf="@+id/sin_product_details" />
+
+    <TextView
+        android:id="@+id/sin_product_details"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:fontFamily="sans-serif"
+        android:text="$"
+        android:textColor="#BCE73039"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="@+id/seller_name"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/seller_name"
+        app:layout_constraintTop_toBottomOf="@+id/seller_name" />
+
+    <Button
+        android:id="@+id/btn_buy"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginStart="224dp"
+        android:layout_marginTop="344dp"
+        android:background="@drawable/buy_btn_style"
+        android:text="Buy now"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.478"
+        app:layout_constraintStart_toStartOf="@+id/view6"
+        app:layout_constraintTop_toTopOf="@+id/imageView3" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/btn_buy_animate"
+        android:layout_width="180dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="308dp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/view6"
+        app:layout_constraintTop_toTopOf="@+id/imageView3"
+        app:lottie_autoPlay="true"
+        app:lottie_fileName="btnbuy.json" />
+
+    <View
+        android:id="@+id/view6"
+        android:layout_width="400dp"
+        android:layout_height="0.5dp"
+        android:layout_marginTop="32dp"
+        android:background="#D3959494"
+        app:layout_constraintEnd_toEndOf="@+id/sin_product_details"
+        app:layout_constraintHorizontal_bias="0.053"
+        app:layout_constraintStart_toStartOf="@+id/sin_product_details"
+        app:layout_constraintTop_toBottomOf="@+id/sin_product_details" />
+
+    <TextView
+        android:id="@+id/description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="sans-serif"
+        android:text="Description"
+        android:textColor="#BCE73039"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="@+id/view6"
+        app:layout_constraintHorizontal_bias="0.033"
+        app:layout_constraintStart_toStartOf="@+id/view6"
+        app:layout_constraintTop_toBottomOf="@+id/view6" />
+
+    <TextView
+        android:id="@+id/description_product_details"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="TextView TextView TextView TextViewTextView TextViewTextView TextView TextView "
+        android:textSize="12sp"
+        android:fontFamily="sans-serif"
+        app:layout_constraintEnd_toEndOf="@+id/description"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/description"
+        app:layout_constraintTop_toBottomOf="@+id/description" />
+
+    <View
+        android:id="@+id/view7"
+        android:layout_width="400dp"
+        android:layout_height="0.5dp"
+        android:layout_marginTop="20dp"
+        android:background="#D3959494"
+        app:layout_constraintEnd_toEndOf="@+id/description_product_details"
+        app:layout_constraintHorizontal_bias="0.137"
+        app:layout_constraintStart_toStartOf="@+id/description_product_details"
+        app:layout_constraintTop_toBottomOf="@+id/description_product_details" />
+
+    <TextView
+        android:id="@+id/Type_product_details"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="sans-serif"
+        android:text="Type"
+        android:textColor="#BCE73039"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="@+id/view7"
+        app:layout_constraintHorizontal_bias="0.033"
+        app:layout_constraintStart_toStartOf="@+id/view7"
+        app:layout_constraintTop_toBottomOf="@+id/view7" />
+
+    <TextView
+        android:id="@+id/type_product_details_category"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:text="Women"
+        android:textSize="12sp"
+        android:fontFamily="sans-serif"
+        app:layout_constraintEnd_toEndOf="@+id/Type_product_details"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/Type_product_details"
+        app:layout_constraintTop_toBottomOf="@+id/Type_product_details" />
+
+    <TextView
+        android:id="@+id/location_product_details"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:fontFamily="sans-serif"
+        android:text="Location"
+        android:textColor="#BCE73039"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="@+id/type_product_details_category"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/type_product_details_category"
+        app:layout_constraintTop_toBottomOf="@+id/type_product_details_category" />
+
+    <Button
+        android:id="@+id/btn_location_map_product"
+        android:layout_width="45dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/buy_btn_style"
+        android:text="click"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toEndOf="@+id/location_product_details"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/location_product_details"
+        app:layout_constraintTop_toBottomOf="@+id/location_product_details" />
+
+    <TextView
+        android:id="@+id/Phone_product_details"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="144dp"
+        android:fontFamily="sans-serif"
+        android:text="Phone Number"
+        android:textColor="#BCE73039"
+        android:textSize="14sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/Type_product_details"
+        app:layout_constraintStart_toEndOf="@+id/Type_product_details" />
+
+    <TextView
+        android:id="@+id/phone_product_details_category"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:fontFamily="sans-serif"
+        android:text="057897665633"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="@+id/Phone_product_details"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/Phone_product_details"
+        app:layout_constraintTop_toBottomOf="@+id/Phone_product_details" />
+
+    <TextView
+        android:id="@+id/email_product_details"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:fontFamily="sans-serif"
+        android:text="Email"
+        android:textColor="#BCE73039"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="@+id/phone_product_details_category"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/phone_product_details_category"
+        app:layout_constraintTop_toBottomOf="@+id/phone_product_details_category" />
+
+    <TextView
+        android:id="@+id/email_product_details_category"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="sans-serif"
+        android:text="daniaalsaqqa2000@gmail.com"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="@+id/email_product_details"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/email_product_details"
+        app:layout_constraintTop_toBottomOf="@+id/email_product_details" />
+
+    <TextView
+        android:id="@+id/Rate_product_details"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:fontFamily="sans-serif"
+        android:text="Rate"
+        android:textColor="#BCE73039"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="@+id/email_product_details_category"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/email_product_details_category"
+        app:layout_constraintTop_toBottomOf="@+id/email_product_details_category" />
+
+    <RatingBar
+        android:id="@+id/rate_bar_product_details"
+        style="@style/Widget.AppCompat.RatingBar.Small"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:isIndicator="false"
+        android:numStars="5"
+        android:progressTint="#FFB025"
+        android:rating="3"
+        android:stepSize="0.5"
+        app:layout_constraintEnd_toEndOf="@+id/Rate_product_details"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/Rate_product_details"
+        app:layout_constraintTop_toBottomOf="@+id/Rate_product_details" />
+
+    <TextView
+        android:id="@+id/rate_product_details_category"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="sans-serif"
+        android:text="click rate"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="@+id/rate_bar_product_details"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/rate_bar_product_details"
+        app:layout_constraintTop_toBottomOf="@+id/rate_bar_product_details" />
+
+    <Button
+        android:id="@+id/btn_back_product_details"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/arrow_back"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.034"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView3" />
+</androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>

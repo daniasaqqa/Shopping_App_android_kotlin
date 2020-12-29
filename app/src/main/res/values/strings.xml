@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Home Shopping</string>
+
+    <string-array name="country">
+        <item>Palestine</item>
+
+    </string-array>
+
+    <string-array name="types">
+        <item>clothes</item>
+        <item>food</item>
+        <item>cars</item>
+
+    </string-array>
+
+    <string name="nav_home">Home</string>
+    <string name="nav_add">Add</string>
+    <string name="nav_profile">Profile</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_map_admin">Map</string>
+    <string name="title_activity_map_user">Map</string>
+</resources>

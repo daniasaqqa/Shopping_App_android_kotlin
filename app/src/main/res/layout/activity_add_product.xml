@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.AddProduct">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <ImageView
+        android:id="@+id/img_add_product"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/img_slide_one" />
+
+    <Button
+        android:id="@+id/btn_back_add_product"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/arrow_back"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.034"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView3" />
+
+    <View
+        android:id="@+id/view_add_product"
+        android:layout_width="match_parent"
+        android:layout_height="600dp"
+        android:layout_marginTop="248dp"
+
+        android:background="@drawable/card_shape_design"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/product_Information"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif"
+        android:text="Product Information"
+        android:textColor="#000000"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="@+id/view_add_product"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="@+id/view_add_product"
+        app:layout_constraintTop_toTopOf="@+id/view_add_product" />
+
+    <EditText
+        android:id="@+id/product_name_add_product"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableStart="@drawable/box"
+        android:drawablePadding="8sp"
+        android:ems="17"
+        android:fontFamily="sans-serif"
+        android:hint="Product Name"
+        android:inputType="text"
+        android:paddingStart="5sp"
+        android:pointerIcon="text"
+        android:textColor="#E73039"
+        app:layout_constraintEnd_toEndOf="@+id/product_Information"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="@+id/product_Information"
+        app:layout_constraintTop_toBottomOf="@+id/product_Information" />
+
+    <EditText
+        android:id="@+id/price_add_product"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableStart="@drawable/money"
+        android:drawablePadding="8sp"
+        android:ems="17"
+        android:fontFamily="sans-serif"
+        android:hint="Price"
+        android:inputType="text"
+        android:paddingStart="5sp"
+        android:pointerIcon="text"
+        android:textColor="#E73039"
+        app:layout_constraintEnd_toEndOf="@+id/product_name_add_product"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="@+id/product_name_add_product"
+        app:layout_constraintTop_toBottomOf="@+id/product_name_add_product" />
+
+    <Spinner
+        android:id="@+id/type_add_product"
+        android:layout_width="350dp"
+        android:layout_height="35dp"
+        android:fontFamily="sans-serif"
+        android:hint="Type"
+        android:entries="@array/country"
+        android:textColor="#E73039"
+        android:drawableStart="@drawable/type_icon"
+        app:layout_constraintEnd_toEndOf="@+id/price_add_product"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="@+id/price_add_product"
+        app:layout_constraintTop_toBottomOf="@+id/price_add_product"/>
+
+
+    <EditText
+        android:id="@+id/phone_add_product"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableStart="@drawable/mobile_icon"
+        android:drawablePadding="8sp"
+        android:ems="17"
+        android:fontFamily="sans-serif"
+        android:hint="Phone number"
+        android:inputType="phone"
+        android:paddingStart="5sp"
+        android:pointerIcon="text"
+        android:textColor="#E73039"
+        app:layout_constraintEnd_toEndOf="@+id/type_add_product"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="@+id/type_add_product"
+        app:layout_constraintTop_toBottomOf="@+id/type_add_product" />
+
+    <EditText
+        android:id="@+id/email_add_product"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableStart="@drawable/email_icon"
+        android:drawablePadding="8sp"
+        android:ems="17"
+        android:fontFamily="sans-serif"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:paddingStart="5sp"
+        android:pointerIcon="text"
+        android:textColor="#E73039"
+        app:layout_constraintEnd_toEndOf="@+id/phone_add_product"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="@+id/phone_add_product"
+        app:layout_constraintTop_toBottomOf="@+id/phone_add_product" />
+
+    <EditText
+        android:id="@+id/description_add_product"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableStart="@drawable/description_icon"
+        android:drawablePadding="8sp"
+        android:ems="17"
+        android:gravity="start|top"
+        android:fontFamily="sans-serif"
+        android:hint="Description"
+        android:inputType="textMultiLine"
+        android:lines="5"
+        android:paddingStart="5sp"
+        android:textColor="#E73039"
+        app:layout_constraintEnd_toEndOf="@+id/email_add_product"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="@+id/email_add_product"
+        app:layout_constraintTop_toBottomOf="@+id/email_add_product"/>
+
+        <Button
+            android:id="@+id/btn_add_product_add_ptoduct"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/button_syle"
+            android:text="Add Product"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/map"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@+id/map"
+            app:layout_constraintTop_toBottomOf="@+id/map" />
+
+        <fragment
+            android:id="@+id/map"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="350dp"
+            android:layout_height="200dp"
+            android:layout_marginTop="20dp"
+            app:layout_constraintEnd_toEndOf="@+id/description_add_product"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@+id/description_add_product"
+            app:layout_constraintTop_toBottomOf="@+id/description_add_product" />
+
+        <TextView
+        android:id="@+id/aa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.105"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/description_add_product" />
+
+    <TextView
+        android:id="@+id/bb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.105"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/description_add_product" />
+
+
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.core.widget.NestedScrollView>

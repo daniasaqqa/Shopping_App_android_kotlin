@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.EditProduct">
+    <ImageView
+        android:id="@+id/img_edit_product"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/img_slide_one" />
+    <Button
+        android:id="@+id/btn_back_edit_product"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/arrow_back"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.034"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView3" />
+
+    <View
+        android:id="@+id/view_edit_product"
+        android:layout_width="match_parent"
+        android:layout_height="460dp"
+        android:layout_marginTop="248dp"
+        android:background="@drawable/card_shape_design"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/product_Information"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif"
+        android:text="Edit Product Information"
+        android:textColor="#000000"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toEndOf="@+id/view_edit_product"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="@+id/view_edit_product"
+        app:layout_constraintTop_toTopOf="@+id/view_edit_product" />
+
+    <EditText
+        android:id="@+id/product_name_edit_product"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableStart="@drawable/box"
+        android:drawablePadding="8sp"
+        android:ems="17"
+        android:fontFamily="sans-serif"
+        android:hint="Product Name"
+        android:inputType="textEmailAddress"
+        android:paddingStart="5sp"
+        android:pointerIcon="text"
+        android:textColor="#E73039"
+        app:layout_constraintEnd_toEndOf="@+id/product_Information"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="@+id/product_Information"
+        app:layout_constraintTop_toBottomOf="@+id/product_Information" />
+
+    <EditText
+        android:id="@+id/price_edit_product"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableStart="@drawable/money"
+        android:drawablePadding="8sp"
+        android:ems="17"
+        android:fontFamily="sans-serif"
+        android:hint="Price"
+        android:inputType="text"
+        android:paddingStart="5sp"
+        android:pointerIcon="text"
+        android:textColor="#E73039"
+        app:layout_constraintEnd_toEndOf="@+id/product_name_edit_product"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="@+id/product_name_edit_product"
+        app:layout_constraintTop_toBottomOf="@+id/product_name_edit_product" />
+
+    <TextView
+        android:id="@+id/tv_type_edit_product"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif"
+        android:text="type"
+        android:textColor="@color/maincolor"
+        android:textSize="18sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/type_edit_product"
+        app:layout_constraintStart_toStartOf="@+id/price_edit_product" />
+
+
+    <Spinner
+        android:id="@+id/type_edit_product"
+        android:layout_width="250dp"
+        android:layout_height="35dp"
+        android:drawableStart="@drawable/type_icon"
+        android:entries="@array/country"
+        android:fontFamily="sans-serif"
+        android:hint="Type"
+        android:textColor="#E73039"
+        app:layout_constraintEnd_toEndOf="@+id/price_edit_product"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/price_edit_product"
+        app:layout_constraintTop_toBottomOf="@+id/price_edit_product" />
+
+    <EditText
+        android:id="@+id/phone_edit_product"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableStart="@drawable/mobile_icon"
+        android:drawablePadding="8sp"
+        android:ems="17"
+        android:fontFamily="sans-serif"
+        android:hint="Phone number"
+        android:inputType="phone"
+        android:paddingStart="5sp"
+        android:pointerIcon="text"
+        android:textColor="#E73039"
+        app:layout_constraintEnd_toEndOf="@+id/type_edit_product"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/type_edit_product"
+        app:layout_constraintTop_toBottomOf="@+id/type_edit_product" />
+
+    <EditText
+        android:id="@+id/email_edit_product"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableStart="@drawable/email_icon"
+        android:drawablePadding="8sp"
+        android:ems="17"
+        android:fontFamily="sans-serif"
+        android:hint="Email"
+        android:inputType="phone"
+        android:paddingStart="5sp"
+        android:pointerIcon="text"
+        android:textColor="#E73039"
+        app:layout_constraintEnd_toEndOf="@+id/phone_edit_product"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="@+id/phone_edit_product"
+        app:layout_constraintTop_toBottomOf="@+id/phone_edit_product" />
+
+    <EditText
+        android:id="@+id/description_edit_product"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableStart="@drawable/description_icon"
+        android:drawablePadding="8sp"
+        android:ems="17"
+        android:gravity="start|top"
+        android:fontFamily="sans-serif"
+        android:hint="Description"
+        android:inputType="textMultiLine"
+        android:lines="5"
+        android:paddingStart="5sp"
+        android:textColor="#E73039"
+        app:layout_constraintEnd_toEndOf="@+id/email_edit_product"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="@+id/email_edit_product"
+        app:layout_constraintTop_toBottomOf="@+id/email_edit_product"/>
+
+    <Button
+        android:id="@+id/btn_edit_product_edit_ptoduct"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="644dp"
+        android:background="@drawable/button_syle"
+        android:text="Save"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/description_edit_product"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/description_edit_product"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

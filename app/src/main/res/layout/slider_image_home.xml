@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/card_rc_slide_prod"
+    android:layout_width="match_parent"
+    android:layout_height="400dp"
+    >
+
+    <ImageView
+        android:id="@+id/image_slide"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:contentDescription="New Products..."
+        android:scaleType="fitXY"
+
+        android:src="@drawable/img_slide_one"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/view_slide"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:alpha="0.5"
+        android:background="#000000"
+
+        app:layout_constraintBottom_toBottomOf="@id/image_slide"
+        app:layout_constraintEnd_toEndOf="@id/image_slide"
+        app:layout_constraintStart_toStartOf="@id/image_slide"
+        app:layout_constraintTop_toTopOf="@id/image_slide" />
+
+    <TextView
+        android:id="@+id/slid_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif"
+        android:text="New Products..."
+        android:textColor="#ffffff"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/image_slide"
+        app:layout_constraintStart_toStartOf="@+id/image_slide"
+        app:layout_constraintTop_toTopOf="@+id/image_slide" />
+</androidx.constraintlayout.widget.ConstraintLayout>

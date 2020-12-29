@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundr"
+    tools:context=".Activities.AddCategory">
+
+    <Button
+        android:id="@+id/btn_back_add_category"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:background="@drawable/arrow_back"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.034"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/blob_shape" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView6"
+        app:layout_constraintEnd_toEndOf="@+id/imageView6"
+        app:layout_constraintHorizontal_bias="0.156"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView6"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/vector_girl_cat" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="210dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="52dp"
+        android:fontFamily="sans-serif"
+        android:text="You can add new category"
+        android:textColor="#000000"
+        android:textSize="35sp"
+        android:textStyle="normal"
+        app:layout_constraintEnd_toEndOf="@+id/imageView6"
+        app:layout_constraintStart_toEndOf="@+id/imageView7"
+        app:layout_constraintTop_toTopOf="@+id/imageView7" />
+
+    <TextView
+        android:id="@+id/three_point"
+        android:layout_width="210dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif"
+        android:text="..."
+        android:textColor="#000000"
+        android:textSize="35sp"
+        android:textStyle="normal"
+        app:layout_constraintEnd_toEndOf="@+id/textView10"
+        app:layout_constraintStart_toStartOf="@+id/textView10"
+        app:layout_constraintTop_toBottomOf="@+id/textView10" />
+
+
+    <View
+        android:id="@+id/view_add_category"
+        android:layout_width="match_parent"
+        android:layout_height="340dp"
+        android:background="@drawable/card_shape_design"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.996" />
+
+    <TextView
+        android:id="@+id/category_Information"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif"
+        android:text="Category Information"
+        android:textColor="#000000"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="@+id/view_add_category"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="@+id/view_add_category"
+        app:layout_constraintTop_toTopOf="@+id/view_add_category" />
+
+
+    <EditText
+        android:id="@+id/et_category_name_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:drawableStart="@drawable/category_icon"
+        android:ems="17"
+        android:hint="Category Name"
+        android:inputType="text"
+        android:paddingStart="5sp"
+        android:pointerIcon="text"
+        android:textColor="#E73039"
+        android:drawablePadding="8sp"
+        android:fontFamily="sans-serif"
+        app:layout_constraintEnd_toEndOf="@+id/category_Information"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="@+id/category_Information"
+        app:layout_constraintTop_toBottomOf="@+id/category_Information" />
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/category_add_img"
+        android:layout_width="95dp"
+        android:layout_height="95dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/category_circle"
+        android:src="@drawable/camer"
+        app:civ_border_color="@color/maincolor"
+        app:civ_border_width="1dp"
+        app:layout_constraintEnd_toEndOf="@+id/et_category_name_add"
+        app:layout_constraintStart_toStartOf="@+id/et_category_name_add"
+        app:layout_constraintTop_toBottomOf="@+id/et_category_name_add" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="sans-serif"
+        android:text="Add icon just"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        android:textStyle="normal"
+        app:layout_constraintEnd_toEndOf="@+id/category_add_img"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/category_add_img"
+        app:layout_constraintTop_toBottomOf="@+id/category_add_img" />
+
+    <Button
+        android:id="@+id/btn_add_category"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:background="@drawable/button_syle"
+        android:fontFamily="sans-serif"
+        android:text="Add category"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/textView11"
+        app:layout_constraintStart_toStartOf="@+id/textView11"
+        app:layout_constraintTop_toBottomOf="@+id/textView11" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
